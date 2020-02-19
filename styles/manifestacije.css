@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(27, 26, 32);
+    position: fixed ;
+}
+nav ul{
+    height: 100%;
+    margin-right: 30;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 20px;
+    
+}
+nav ul li :hover{
+    background-color: rgb(7, 19, 36);
+    
+}
+ul li.active a{
+    background-color: rgb(7, 19, 36);
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 30px;
+    transition:0.3s ease;
+}
+.grb{
+    margin-left:35px;
+    margin-top: 10px;
+    float:left;
+  }
+  
+.ull{
+   padding-top: 500px;
+   padding-left: 260px;
+   
+}
+.ull .lii{
+    list-style-type: none;
+}
+.ull .lii .slide{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+    widows: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+input[type="radio"]{
+    position: relative;
+    z-index: 1;
+    height: 18px;
+    width: 18px;
+    float: left;
+    margin-left: 150px;
+    
+}
+
+.ull .lii input[type="radio"]:checked~.slide{
+    margin:60px 200px 0 200px;
+    transition: transform 0.5s;
+    transform: rotateY(0deg);
+    transform-origin: right;
+    
+}
+.ull .lii .slide .content{
+    position: relative;
+    background:rgba(255,255,255,0.75);
+    padding:20px;
+    margin-top:180px;
+    margin-left: 180px;
+    margin-right: 180px;
+    
+}
+.ull .lii .slide .content h2{
+    font-size: 30px;
+}
+.ull .lii .slide .content p{
+    font-size: 18px;
+}
+.ull .lii .slide img{
+    background: cover;
+    position: absolute;
+}
+

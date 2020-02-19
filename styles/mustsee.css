@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(27, 26, 32);
+}
+nav ul{
+    height: 100%;
+    margin-right: 30;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 20px;
+    
+}
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  padding: 30px;
+  transition:0.3s ease;
+}
+
+nav ul li :hover{
+    background-color: rgb(7, 19, 36);
+    
+}
+ul li.active a{
+    background-color: rgb(7, 19, 36);
+}
+.grb{
+  margin-left:35px;
+  margin-top: 10px;
+  float: left;
+}
+.naslov{
+  font-size: 24px;
+  padding:1% 5px 3px 0;
+}
+.container{
+  max-width: 960px;
+  margin:0 auto;
+}
+.parallaxmeraja{
+  background:url("../images/meraja.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.parallaxkozarac{
+  background:url("../images/jkozarac.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.parallaxsopot{
+  background:url("../images/kucice.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.parallaxzidine{
+  background:url("../images/rokovci1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.parallaxmuzej{
+  background:url("../images/muzej.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/pozadina.jpg") ;
+    background-size: cover;
+  background-attachment: fixed;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  background-color:rgb(27, 26, 32);
+  position: fixed;
+}
+nav ul{
+  height: 100%;
+  margin-right: 30;
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 20px;
+}
+nav ul li :hover{
+  background-color: rgb(7, 19, 36);
+  
+}
+ul li.active a{
+  background-color: rgb(7, 19, 36);
+}
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  padding: 30px;
+  transition:0.3s ease;
+}
+.grb{
+margin-left:35px;
+  margin-top: 10px;
+  float:left;
+}
+
+a{
+  text-decoration:none;
+}
+
+.textOverImage{
+    position:relative;
+    width:300px;
+    height:300px;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+  }
+  
+  .textOverImage:hover{
+    background-size:120%;
+  }
+  
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform:translateY(90%);
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+.content{
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  position: absolute;
+  z-index: -1;
+  margin-top:5%;
+  margin-left: 15%;
+}
